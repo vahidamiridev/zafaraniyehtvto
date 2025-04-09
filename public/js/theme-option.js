@@ -69,19 +69,19 @@
 
 		/* Bizwheel Colors */
 		$(".skin1" ).on('click', function(){
-			$("#elena_custom" ).attr("href", "css/skins/skin-1.css" );
+			$("#link-style" ).attr("href", "css/skin1.css" );
 			return false;
 		});
 		$(".skin2" ).on('click', function(){
-			$("#elena_custom" ).attr("href", "css/skins/skin-2.css" );
+			$("#link-style" ).attr("href", "css/skin2.css" );
 			return false;
 		});
 		$(".skin3" ).on('click', function(){
-			$("#elena_custom" ).attr("href", "css/skins/skin-3.css" );
+			$("#link-style" ).attr("href", "css/skin3.css" );
 			return false;
 		});
 		$(".skin4" ).on('click', function(){
-			$("#elena_custom" ).attr("href", "css/skins/skin-4.css" );
+			$("#link-style" ).attr("href", "css/skin4.css" );
 			return false;
 		});
 	});	

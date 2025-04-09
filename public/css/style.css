@@ -59,6 +59,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     src: url('../fonts/IRANSans(FaNum).ttf');
     src: url('../fonts/IRANSans(FaNum)_Bold.ttf') format('truetype'), /* IE6-8 */ url('../fonts/IRANSans(FaNum)_Light.ttf') format('truetype'), /* FF39+,Chrome36+, Opera24+*/ url('../fonts/IRANSans(FaNum)_Medium.ttf') format('truetype'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/IRANSans(FaNum)_UltraLight.ttf') format('truetype');
   }
+  *{
+    user-select: none;
+}
   
   
   body {
