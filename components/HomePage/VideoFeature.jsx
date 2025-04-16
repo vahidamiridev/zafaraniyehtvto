@@ -1,4 +1,6 @@
+import { routes } from "@/public/js/constants";
 import Image from "next/image";
+import Link from "next/link";
 export default function VideoFeature() {
   return (
     <section className="video-feature side overlay section-bg">
@@ -7,7 +9,7 @@ export default function VideoFeature() {
           <div className="col-lg-6 col-md-6 col-12">
             <div className="img-feature ">
               <Image
-                src="/img/why-choose.jpg"
+                src="/img/ai/videoPic.jpg"
                 alt="Video Thumbnail"
                 width={800}
                 height={685}
@@ -33,8 +35,10 @@ export default function VideoFeature() {
               <div className="title">
                 <h2>بهترین ویژگی های ما</h2>
                 <p>
-                  استودیوی ما فقط در مورد طراحی گرافیک نیست. بیشتر از این است ما
-                  خدمات ارتباطی ارائه می دهیم و مسئولیت آن نیز بر عهده ما است
+               انتظار هر فردی برای آموزش میتونه متفاوت و متنوع باشه 
+و آکادمی  و مربی باید افراد را در کنار هم با روش های آموزشی استاندارد 
+رشد و  ارتقاء دهد.
+این اصل نیاز مند تخصص و تجربه است و شما در این مسیر تها نیستید...
                 </p>
               </div>
               <div className="b-features">
@@ -42,8 +46,8 @@ export default function VideoFeature() {
                   <div className="col-lg-6 col-md-6 col-12">
                     {/* <!-- Single List Feature --> */}
                     <div className="single-list-feature">
-                      <i className="fa fa-code"></i>
-                      <h4>    اساتید مجرب و حرفه استودیوی  </h4>
+                      <i className="fa fa-thumbs-o-up"></i>
+                      <h4>    اساتید مجرب و حرفه   </h4>
                       <p>
                  قطعاً ستون اصلی آموزش اساتید هستند  ما اینجا با بهترین های هر  رشته در ایران کنار شما هستیم.
                       </p>
@@ -53,7 +57,7 @@ export default function VideoFeature() {
                   <div className="col-lg-6 col-md-6 col-12">
                     {/* <!-- Single List Feature --> */}
                     <div className="single-list-feature">
-                      <i className="fa fa-html5"></i>
+                      <i className="fa fa-check-square-o"></i>
                       <h4>آموزش خلاقانه</h4>
                       <p>
                       هدف  ما آموزش کاربردی  و خلاقانه جهت ییشرفت سریع تر  و باکیفیت تر دانشجویان میباشد.
@@ -64,7 +68,7 @@ export default function VideoFeature() {
                   <div className="col-lg-6 col-md-6 col-12">
                     {/* <!-- Single List Feature --> */}
                     <div className="single-list-feature">
-                      <i className="fa fa-newspaper-o"></i>
+                      <i className="fa fa-plus"></i>
                       <h4> رشته های  جدید و متنوع  </h4>
                       <p>
                    ما همیشه به دنبال رشته های جدید و متناسب با  نیاز های روز دنیا هستیم.
@@ -86,9 +90,9 @@ export default function VideoFeature() {
                 </div>
               </div>
               <div className="feature-btn">
-                <a href="/about" className="bizwheel-btn theme-2">
+                <Link href={routes.ABOUT} className="bizwheel-btn theme-2">
                    درباره ما
-                </a>
+                </Link>
               </div>
             </div>
           </div>

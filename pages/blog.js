@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <Layout>
+
       {/* <!-- Breadcrumb --> */}
 		<div className="breadcrumbs bread-blog">
 			<div className="container">
@@ -137,6 +137,5 @@ export default function Home() {
 			</div>
 		</section>	
 		{/* <!--/ End Services --> */}
-      </Layout>
     </>
   )}

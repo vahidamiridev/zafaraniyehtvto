@@ -1,9 +1,8 @@
-import Layout from "@/components/Layout";
 import Image from "next/image";
 
 export default function About(){
     return (
-        <Layout>
+        <>
 
 {/* <!-- Breadcrumb --> */}
 		<div className="breadcrumbs overlay" style={{backgroundImage:"url('img/breadcrumb.jpg')"}}>
@@ -64,6 +63,6 @@ export default function About(){
 		</section>	
 		{/* <!--/ End About Us --> */}
         
-        </Layout>
+        </>
     )
 }

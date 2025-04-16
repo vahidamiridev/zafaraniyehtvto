@@ -10,15 +10,13 @@ export default function CallToAction() {
             <div className="call-inner">
               <h2>با خیال راحت آموزش ببین و پیشرفت کن...   </h2>
               <p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است
               </p>
             </div>
           </div>
           <div className="col-lg-3 col-12">
             <div className="button">
-              <a href="portfolio.html" className="bizwheel-btn">
-                نمونه کارها
+              <a href="services" className="bizwheel-btn">
+                 دوره های آموزشی
               </a>
             </div>
           </div>

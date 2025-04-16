@@ -1,4 +1,6 @@
+import { routes } from "@/public/js/constants";
 import Image from "next/image";
+import Link from "next/link";
 export default function Portfolio() {
   return (
     <section className="portfolio section-space">
@@ -8,16 +10,16 @@ export default function Portfolio() {
             <div className="section-title default text-center">
               <div className="section-top">
                 <h1>
-                  <span>پروژه</span>
-                  <b>آثار ما</b>
+                  <span>کاربردی</span>
+                  <b> دوره های آموزشی</b>
                 </h1>
               </div>
               <div className="section-bottom">
                 <div className="text">
                   <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
-                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
-                    و مجله در ستون و سطرآنچنان که لازم است
+آموزش در هر سنی  و با هر  سطح از توانایی یک
+ امر واجب و همیشگی است و سعی کن همیشه یک مهارت جدید یادبگیری و یا اگر مهارتی رو 
+بلد هستی خودت رو در اون مهارت به روز کنی 
                   </p>
                 </div>
               </div>
@@ -27,34 +29,42 @@ export default function Portfolio() {
         <div className="row">
           <div className="col-12">
             <div className="portfolio-menu">
-              {/* <!-- Portfolio Nav --> */}
               <ul
                 id="portfolio-nav"
                 className="portfolio-nav tr-list list-inline cbp-l-filters-work"
               >
-                <li data-filter="*" className="cbp-filter-item active">
-                  همه
+                <li
+                //  data-filter="*"
+                 className="cbp-filter-item active">
+                  زبان انگلیسی
                 </li>
-                <li data-filter=".animation" className="cbp-filter-item">
-                  انیمیشن
+                <li 
+                // data-filter=".animation"
+                 className="cbp-filter-item">
+                  زبان آلمانی
                 </li>
-                <li data-filter=".branding" className="cbp-filter-item">
-                  نام تجاری
+                <li 
+                // data-filter=".branding"
+                 className="cbp-filter-item">
+                   کامپیوتر
                 </li>
-                <li data-filter=".business" className="cbp-filter-item">
-                  کسب و کار
+                <li 
+                // data-filter=".business"
+                 className="cbp-filter-item">
+                   برنامه نویسی  
                 </li>
-                <li data-filter=".consulting" className="cbp-filter-item">
-                  مشاوره
+        
+                <li 
+                // data-filter=".marketing"
+                 className="cbp-filter-item">
+                   هنر های تجسمی
                 </li>
-                <li data-filter=".marketing" className="cbp-filter-item">
-                  بازار یابی
-                </li>
-                <li data-filter=".seo" className="cbp-filter-item">
-                  سئو
+                <li 
+                // data-filter=".seo"
+                 className="cbp-filter-item">
+                  نرم افزار های تخصصی
                 </li>
               </ul>
-              {/* <!--/ End Portfolio Nav --> */}
             </div>
           </div>
         </div>
@@ -67,20 +77,20 @@ export default function Portfolio() {
                   <div className="single-portfolio">
                     <div className="portfolio-head overlay">
                       <Image
-                        src="/img/portfolio/portfolio-1.jpg"
+                        src="/img/ai/germaniDoughter.webp"
                         alt="#"
                         width={600}
                         height={417}
                       />
-                      <a className="more" href="portfolio-single.html">
+                      <a className="more" href={routes.LANGUAGE_DU}>
                         <i className="fa fa-long-arrow-left"></i>
                       </a>
                     </div>
                     <div className="portfolio-content">
                       <h4>
-                        <a href="portfolio-single.html">بازاریابی خلاق</a>
+                    <Link href={routes.LANGUAGE_DU}> زبان آلمانی</Link>
                       </h4>
-                      <p>مارک ، مشاوره</p>
+                      <p>  حضوری - آنلاین </p>
                     </div>
                   </div>
                   {/* <!--/ End Single Portfolio --> */}
@@ -90,20 +100,21 @@ export default function Portfolio() {
                   <div className="single-portfolio">
                     <div className="portfolio-head overlay">
                       <Image
-                        src="/img/portfolio/portfolio-2.jpg"
+                        src="/img/ai/english-language.png"
                         alt="#"
                         width={600}
                         height={417}
                       />
-                      <a className="more" href="portfolio-single.html">
+                      <a className="more" href={routes.LANGUAGE_EN}>
                         <i className="fa fa-long-arrow-left"></i>
                       </a>
                     </div>
                     <div className="portfolio-content">
                       <h4>
-                        <a href="portfolio-single.html">بازاریابی خلاق</a>
+                    <Link href={routes.LANGUAGE_EN}> زبان انگیسی</Link>
                       </h4>
-                      <p>مارک ، مشاوره</p>
+                      <p>  حضوری - آنلاین </p>
+
                     </div>
                   </div>
                   {/* <!--/ End Single Portfolio --> */}
@@ -113,20 +124,21 @@ export default function Portfolio() {
                   <div className="single-portfolio">
                     <div className="portfolio-head overlay">
                       <Image
-                        src="/img/portfolio/portfolio-3.jpg"
+                        src="/img/ai/computer.webp"
                         alt="#"
                         width={600}
                         height={417}
                       />
-                      <a className="more" href="portfolio-single.html">
+                      <a className="more" href={routes.COMPUTER_GENERAL}>
                         <i className="fa fa-long-arrow-left"></i>
                       </a>
                     </div>
                     <div className="portfolio-content">
                       <h4>
-                        <a href="portfolio-single.html">بازاریابی خلاق</a>
+                    <Link href={routes.COMPUTER_GENERAL}> کامپیوتر (عمومی- تخصصی)</Link>
                       </h4>
-                      <p>مارک ، مشاوره</p>
+                      <p>  حضوری - آنلاین </p>
+
                     </div>
                   </div>
                   {/* <!--/ End Single Portfolio --> */}
@@ -136,20 +148,20 @@ export default function Portfolio() {
                   <div className="single-portfolio">
                     <div className="portfolio-head overlay">
                       <Image
-                        src="/img/portfolio/portfolio-4.jpg"
+                        src="/img/ai/developer.webp"
                         alt="#"
                         width={600}
                         height={417}
                       />
-                      <a className="more" href="portfolio-single.html">
+                      <a className="more" href={routes.PROGRAMING_junior}>
                         <i className="fa fa-long-arrow-left"></i>
                       </a>
                     </div>
                     <div className="portfolio-content">
                       <h4>
-                        <a href="portfolio-single.html">بازاریابی خلاق</a>
+                    <Link href={routes.PROGRAMING_junior}> برنامه نویسی</Link>
                       </h4>
-                      <p>مارک ، مشاوره</p>
+                      <p>  حضوری - آنلاین </p>
                     </div>
                   </div>
                   {/* <!--/ End Single Portfolio --> */}
@@ -159,20 +171,20 @@ export default function Portfolio() {
                   <div className="single-portfolio">
                     <div className="portfolio-head overlay">
                       <Image
-                        src="/img/portfolio/portfolio-5.jpg"
+                        src="/img/ai/painting.webp"
                         alt="#"
                         width={600}
                         height={417}
                       />
-                      <a className="more" href="portfolio-single.html">
+                      <a className="more" href={routes.ART}>
                         <i className="fa fa-long-arrow-left"></i>
                       </a>
                     </div>
                     <div className="portfolio-content">
                       <h4>
-                        <a href="portfolio-single.html">بازاریابی خلاق</a>
+                        <a href="portfolio-single.html"> هنر های تجسمی</a>
                       </h4>
-                      <p>مارک ، مشاوره</p>
+                      <p>  حضوری - آنلاین </p>
                     </div>
                   </div>
                   {/* <!--/ End Single Portfolio --> */}
@@ -182,20 +194,20 @@ export default function Portfolio() {
                   <div className="single-portfolio">
                     <div className="portfolio-head overlay">
                       <Image
-                        src="/img/portfolio/portfolio-6.jpg"
+                        src="/img/ai/workshop.webp"
                         alt="#"
                         width={600}
                         height={417}
                       />
-                      <a className="more" href="portfolio-single.html">
+                      <a className="more" href={routes.WORKSHOP}>
                         <i className="fa fa-long-arrow-left"></i>
                       </a>
                     </div>
                     <div className="portfolio-content">
                       <h4>
-                        <a href="portfolio-single.html">بازاریابی خلاق</a>
+                        <a  href={routes.WORKSHOP}>کارگاه های آموزشی (رایگان)</a>
                       </h4>
-                      <p>مارک ، مشاوره</p>
+                      <p>  حضوری - آنلاین </p>
                     </div>
                   </div>
                   {/* <!--/ End Single Portfolio --> */}

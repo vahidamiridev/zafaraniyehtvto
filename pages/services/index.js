@@ -5,7 +5,6 @@ import Image from "next/image";
 export default function Services() {
   return (
     <>
-      <Layout>
       {/* <!-- Breadcrumb --> */}
 		<div className="breadcrumbs overlay" style={{backgroundImage:"url('img/breadcrumb.jpg')"}}>
 			<div className="container">
@@ -142,7 +141,6 @@ export default function Services() {
 		</section>
 		{/* <!--/ End Services --> */}
 
-      </Layout>
     </>
   );
 }

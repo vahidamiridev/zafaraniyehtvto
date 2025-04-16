@@ -17,7 +17,7 @@ export default function Document() {
         <link rel="stylesheet" href="/css/owl-carousel.min.css" />
         <link rel="stylesheet" href="/css/slicknav.min.css" />
         <link rel="stylesheet" href="/css/reset.css" />
-        <link rel="stylesheet" id="link-style" href="/css/skin4.css" />
+        <link rel="stylesheet" id="link-style" href="/css/style.css" />
         <link rel="stylesheet" href="/css/responsive.css" />
         <link rel="icon" type="image/png" href="img/favicon.png" />
         <link

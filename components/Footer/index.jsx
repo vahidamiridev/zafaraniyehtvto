@@ -1,7 +1,9 @@
+import { routes } from "@/public/js/constants";
 import Image from "next/image";
+import Link from "next/link";
 export default function Footer (){
     return (
-        <footer className="footer" style={{backgroundImage:"url('img/map.png')"}}>
+        <footer className="footer" style={{backgroundImage:"url('/img/map.png')"}}>
         {/* <!-- Footer Top --> */}
         <div className="footer-top">
           <div className="container">
@@ -11,7 +13,7 @@ export default function Footer (){
                 <div className="single-widget footer-about widget">
                   <div className="logo">
                     <div className="img-logo">
-                      <a className="logo" href="/">
+                      <a className="logo" href={routes.HOME}>
                       آکادمی تخصصی زعفرانیه
                         {/* <Image
                           className="img-responsive"
@@ -76,29 +78,28 @@ export default function Footer (){
                   <h3 className="widget-title">پیوندهای مهم</h3>
                   <ul>
                     <li>
-                      <a href="/"> خانه</a>
+                      <a href={routes.HOME}> خانه</a>
                     </li>
                     <li>
-                      <a href="/services"> دوره های آموزشی</a>
+                  <Link href={routes.SERVICES}> دوره های آموزشی</Link>
                     </li>
                     <li>
-                      <a href="/blogs"> وبلاگ و مقالات </a>
+                      <Link href={routes.BLOGS}> وبلاگ و مقالات </Link>
                     </li>
                     <li>
-                      <a href="/about">درباره ما</a>
+                      <Link href={routes.ABOUT}>درباره ما</Link>
                     </li>
                     <li>
-                      <a href="/contact">تماس با ما</a>
+                      <Link href={routes.CONTACT}>تماس با ما</Link>
                     </li>
                   </ul>
                 </div>
                 {/* <!--/ End Footer Links -->			 */}
               </div>
-              <div className="col-lg-4 col-md-6 col-12">
+              <div className="col-lg-1 col-md-6 col-12">
                 {/* <!-- Footer News --> */}
-                <div className="single-widget footer-news widget">
+                {/* <div className="single-widget footer-news widget">
                   <h3 className="widget-title">صفحه وبلاگ</h3>
-                  {/* <!-- Single News --> */}
                   <div className="single-f-news">
                     <div className="post-thumb">
                       <a href="#">
@@ -119,8 +120,6 @@ export default function Footer (){
                       </h4>
                     </div>
                   </div>
-                  {/* <!--/ End Single News --> */}
-                  {/* <!-- Single News --> */}
                   <div className="single-f-news">
                     <div className="post-thumb">
                       <a href="#">
@@ -141,8 +140,7 @@ export default function Footer (){
                       </h4>
                     </div>
                   </div>
-                  {/* <!--/ End Single News --> */}
-                </div>
+                </div> */}
                 {/* <!--/ End Footer News -->			 */}
               </div>
               <div className="col-lg-3 col-md-6 col-12">

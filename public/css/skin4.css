@@ -233,7 +233,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     -moz-box-shadow: inherit;
   }
   .header .img-logo {
-    margin-top: 22px;
+    margin-top: 30px;
+    color: red;
   }
   .header .text-logo{
     margin-top:30px;
@@ -306,12 +307,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     margin-right: 6px;
     font-size: 10px;
   }
-  /* .header .nav li.icon-active a::after {
+  .header .nav li.icon-active a::after {
     content: "\f107";
     position: relative;
     font-family: 'FontAwesome';
     padding-right: 6px;
-  } */
+  }
   .header .nav li .sub-menu a::after,
   .header .nav li.icon-active .sub-menu li.icon-active .sub-menu a::after,
   .header .nav li.icon-active .sub-menu li.icon-active .sub-menu li.icon-active .sub-menu a::after{

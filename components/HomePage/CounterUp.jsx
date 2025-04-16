@@ -16,7 +16,7 @@ export default function Counterup() {
                     <span>+</span>
                   </h3>
                 </div>
-                <p>آثار کامل</p>
+                <p> کارگاه آموزشی</p>
               </div>
             </div>
             {/* <!--/ End Single Counterup --> */}
@@ -30,11 +30,11 @@ export default function Counterup() {
               <div className="conter-content">
                 <div className="counter-head">
                   <h3>
-                    <b className="number">5999</b>
+                    <b className="number">850</b>
                     <span>+</span>
                   </h3>
                 </div>
-                <p>مشتری های خوشحال</p>
+                <p>   دانشجویان        </p>
               </div>
             </div>
             {/* <!--/ End Single Counterup --> */}
@@ -43,16 +43,17 @@ export default function Counterup() {
             {/* <!-- Single Counterup --> */}
             <div className="single-counter">
               <div className="icon">
-                <i className="fa fa-life-ring"></i>
+                <i className="fa fa-certificate
+"></i>
               </div>
               <div className="conter-content">
                 <div className="counter-head">
                   <h3>
-                    <b className="number">5988</b>
+                    <b className="number">369</b>
                     <span>+</span>
                   </h3>
                 </div>
-                <p>بلیط پشتیبانی</p>
+                <p> تعداد مدارک صادر شده</p>
               </div>
             </div>
             {/* <!--/ End Single Counterup --> */}
@@ -61,16 +62,17 @@ export default function Counterup() {
             {/* <!-- Single Counterup --> */}
             <div className="single-counter">
               <div className="icon">
-                <i className="fa fa-fire"></i>
+                <i className="fa fa-university
+"></i>
               </div>
               <div className="conter-content">
                 <div className="counter-head">
                   <h3>
-                    <b className="number">8569</b>
+                    <b className="number">36</b>
                     <span>+</span>
                   </h3>
                 </div>
-                <p>کار شرکت</p>
+                <p>دوره های آموزشی </p>
               </div>
             </div>
             {/* <!--/ End Single Counterup --> */}

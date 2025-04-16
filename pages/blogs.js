@@ -4,7 +4,6 @@ import Layout from "@/components/Layout";
 export default function Home() {
   return (
     <>
-      <Layout>
 
       {/* <!-- Breadcrumb --> */}
 		<div className="breadcrumbs overlay" style={{backgroundImage:"url('img/breadcrumb.jpg')"}}>
@@ -178,7 +177,6 @@ export default function Home() {
 		</section>
 		{/* <!--/ End Blog Layout --> */}
 
-      </Layout>
     </>
   )
 }

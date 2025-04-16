@@ -4,7 +4,6 @@ import Image from "next/image";
 export default function Team() {
   return (
     <>
-      <Layout>
       {/* <!-- Breadcrumb --> */}
 		<div className="breadcrumbs overlay" style={{backgroundImage:"url('img/breadcrumb.jpg')"}}>
 			<div className="container">
@@ -178,7 +177,6 @@ export default function Team() {
 			</div>
 		</section>
 		{/* <!--/ End Team --> */}
-      </Layout>
     </>
   );
 }

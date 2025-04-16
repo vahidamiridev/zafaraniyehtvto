@@ -59,8 +59,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     src: url('../fonts/IRANSans(FaNum).ttf');
     src: url('../fonts/IRANSans(FaNum)_Bold.ttf') format('truetype'), /* IE6-8 */ url('../fonts/IRANSans(FaNum)_Light.ttf') format('truetype'), /* FF39+,Chrome36+, Opera24+*/ url('../fonts/IRANSans(FaNum)_Medium.ttf') format('truetype'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/IRANSans(FaNum)_UltraLight.ttf') format('truetype');
   }
+  @font-face {
+    font-family: IRANSansBold;
+    src: url(../fonts/IRANSans\(FaNum\)_Bold.ttf);
+  }
   *{
-    user-select: none;
+    /* user-select: none; */
 }
   
   
@@ -236,11 +240,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     margin-top: 22px;
   }
   .header .text-logo{
-    margin-top:30px;
+    margin-top:60px;
   }
   .header .text-logo a,
   .header .img-logo a {
-    font-size: 26px;
+    font-size: 16px;
     font-weight: 600;
     display: block;
     z-index: 9999;
@@ -311,6 +315,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     position: relative;
     font-family: 'FontAwesome';
     padding-right: 6px;
+    display: none;
+
   }
   .header .nav li .sub-menu a::after,
   .header .nav li.icon-active .sub-menu li.icon-active .sub-menu a::after,
@@ -4807,3 +4813,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   /*======================================
   End Theme Others CSS
   ========================================*/
+
+
+  .img-coverr {
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }

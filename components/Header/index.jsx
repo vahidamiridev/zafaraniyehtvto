@@ -1,4 +1,6 @@
+import { routes } from "@/public/js/constants";
 import Image from "next/image";
+import Link from "next/link";
 export default function Header (){
     return (
              <header className="header">
@@ -97,10 +99,10 @@ export default function Header (){
                                   <div className="logo">
                                     {/* <!-- Image Logo --> */}
                                     <div className="img-logo">
-                                      
-                                      {/* <a href="index.js">
-                                        <Image src="/img/logo.png" alt="#"  width={173} height={40}  />
-                                      </a> */}
+                                       <a href={routes.HOME}>
+                                      آکادمی تخصصی زعفرانیه
+                                        {/* <Image src="/img/logo11.png" alt="#"  width={173} height={40}  /> */}
+                                      </a> 
                                     </div>
                                   </div>
                                   <div className="mobile-nav"></div>
@@ -118,7 +120,7 @@ export default function Header (){
                                               className="nav main-menu menu navbar-nav"
                                             >
                                               <li className="icon-active">
-                                                <a href="/">خانه</a>
+                                                <a href={routes.HOME}>خانه</a>
                                                 {/* <ul className="sub-menu">
                                                   <li>
                                                     <a href="index-2.html">
@@ -133,61 +135,62 @@ export default function Header (){
                                                 </ul> */}
                                               </li>
                                               <li className="icon-active">
-                                                <a href="/services">خدمات ما</a>
+                                                <a >خدمات ما</a>
                                                 <ul className="sub-menu">
                                                   <li>
-                                                    <a href="services.html">
+                                                    <Link href={routes.SERVICES}>
                                                       همه خدمات
-                                                    </a>
+                                                    </Link>
                                                   </li>
                                                   <li>
-                                                    <a href="service-business.html">
+                                                <Link href={routes.LANGUAGE_EN}>
                                                          زبان انگلیسی
-                                                    </a>
+                                                    </Link>
                                                   </li>
                                                   <li>
-                                                    <a href="service-develop.html">
+                                                <Link href={routes.LANGUAGE_DU}>
                                                         زبان آلمانی
-                                                    </a>
+                                                    </Link>
                                                   </li>
                                                   <li>
-                                                    <a href="service-market.html">
-                                                         دوره های عمومی کامپیوتر
-                                                    </a>
+                                                <Link href={routes.COMPUTER_GENERAL}>
+                                                           کامپیوتر ( تخصصی و عمومی )
+                                                    </Link>
                                                   </li>
                                                   <li>
-                                                    <a href="service-advertise.html">
+                                                <Link href={routes.PROGRAMING_junior}>
                                                         برنامه نویسی  کودک  
-                                                    </a>
+                                                    </Link>
                                                   </li>
                                                   <li>
-                                                    <a href="service-design.html">
+                                                <Link href={routes.PROGRAMING_PROFESSIONAL}>
                                                          برنامه نویسی پیشرفته
-                                                    </a>
+                                                    </Link>
                                                   </li>
+                                        
                                                   <li>
-                                                    <a href="service-marketing.html">
-                                                       طراحی لباس (دیجیتال  )
-                                                    </a>
-                                                  </li>
-                                                  <li>
-                                                    <a href="service-marketing.html">
+                                                <Link href={routes.ART}>
                                                            هنر های تجسمی -نقاشی
-                                                    </a>
+                                                    </Link>
+                                                  </li>
+                                                  <li>
+                                                <Link href={routes.WORKSHOP}>
+                                                      کارگاه های آموزشی
+                                                    </Link>
                                                   </li>
                                                 </ul>
                                               </li>
-                                     
+{/*                                      
                                               <li className="icon-active">
-                                                <a href="/blogs">وبلاگ</a>
+                                                <Link href={routes.BLOGS}>وبلاگ</Link>
                                             
-                                              </li>
+                                              </li> */}
                                               <li className="icon-active">
-                                                <a href="/about">درباره ما</a>
+                                                <Link href={routes.ABOUT}>درباره ما</Link>
                                       
                                               </li>
                                               <li>
-                                                <a href="/contact">تماس با ما</a>
+                                            <Link href={routes.CONTACT}>تماس با ما</Link>
                                               </li>
                                             </ul>
                                             {/* <!--/ End Naviagiton --> */}
@@ -241,28 +244,28 @@ export default function Header (){
                           </li>
                         </ul>
                         <div className="side-button">
-                          <a href="/services" className="bizwheel-btn theme-2 effect">
+                      <Link href={routes.SERVICES} className="bizwheel-btn theme-2 effect">
                               دوره های آموزشی
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <div className="single-content">
                         <h4>پیوندهای مهم</h4>
                         <ul className="links">
                           <li>
-                            <a href="/"> خانه</a>
+                            <a href={routes.HOME}> خانه</a>
                           </li>
                           <li>
-                            <a href="/services">خدمات ما</a>
+                        <Link href={routes.SERVICES}>خدمات ما</Link>
+                          </li>
+                          {/* <li>
+                            <Link href={routes.BLOGS}>وبلاگ و مقالات</Link>
+                          </li> */}
+                          <li>
+                        <Link href={routes.ABOUT}> درباره ما</Link>
                           </li>
                           <li>
-                            <a href="/blogs">وبلاگ و مقالات</a>
-                          </li>
-                          <li>
-                            <a href="/about"> درباره ما</a>
-                          </li>
-                          <li>
-                            <a href="/contact">تماس با ما</a>
+                        <Link href={routes.CONTACT}>تماس با ما</Link>
                           </li>
                         </ul>
                       </div>

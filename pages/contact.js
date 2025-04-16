@@ -4,7 +4,6 @@ import Layout from "@/components/Layout";
 export default function Contact() {
   return (
     <>
-      <Layout>
       {/* <!-- Breadcrumb --> */}
 		<div className="breadcrumbs overlay" style={{backgroundImage:"url('img/breadcrumb.jpg')"}}>
 			<div className="container">
@@ -129,7 +128,6 @@ export default function Contact() {
 		</div>
 		{/* <!--/ End Google Map --> */}
         
-      </Layout>
     </>
   );
 }

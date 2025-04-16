@@ -9,7 +9,7 @@ export default function Services() {
               <div className="section-top">
                 <h1>
                   <span>کیفیت</span>
-                  <b>دوره های آموزشی که ما ارائه می دهیم : </b>
+                  <b>    آموزشگاه زعفرانیه یک انتخاب هوشمندانه   </b>
                 </h1>
                 <h4>    تو این مسیر تنها نیستی ....</h4>
               </div>

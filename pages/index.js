@@ -9,13 +9,18 @@ import Portfolio from "@/components/HomePage/Portfolio";
 import Services from "@/components/HomePage/Services";
 import TestImonials from "@/components/HomePage/TestImonials";
 import VideoFeature from "@/components/HomePage/VideoFeature";
-import Layout from "@/components/Layout";
+import { useEffect } from "react";
 
 
 export default function Home() {
+
+
+
+  
+
+
   return (
     <>
-      <Layout>
         <HeroSlider />
         <FeaturesArea />
         <VideoFeature />
@@ -25,9 +30,8 @@ export default function Home() {
         <TestImonials />
         <Counterup />
         <OurTeam />
-        <LatestBlog />
-        <ClientArea />
-      </Layout>
+        {/* <LatestBlog /> */}
+        {/* <ClientArea /> */}
     </>
   );
 }
