@@ -119,7 +119,9 @@ export default function Header (){
                                               id="nav"
                                               className="nav main-menu menu navbar-nav"
                                             >
-                                              <li className="icon-active">
+                                              <li
+                                              //  className="icon-active"
+                                              >
                                                 <a href={routes.HOME}>خانه</a>
                                                 {/* <ul className="sub-menu">
                                                   <li>
@@ -185,7 +187,9 @@ export default function Header (){
                                                 <Link href={routes.BLOGS}>وبلاگ</Link>
                                             
                                               </li> */}
-                                              <li className="icon-active">
+                                              <li 
+                                              // className="icon-active"
+                                              >
                                                 <Link href={routes.ABOUT}>درباره ما</Link>
                                       
                                               </li>
@@ -232,6 +236,15 @@ export default function Header (){
                          با خیال راحت آموزش ببین و پیشرفت کن.
                         </p>
                         <ul className="address-widget-list">
+                        <li className="footer-mobile-number">
+                            <i className="fa fa-map-marker"></i> 
+                            اصفهان شاهین شهر خیابان مخابرات فرعی 4 غربی  پلاک 3
+                          </li>
+                        <li className="footer-mobile-number">
+                            <i className="fa fa-clock-o"></i> 
+                                          
+                صبح 8-13 و بعدازظهر 15 -21{" "}
+                          </li>
                           <li className="footer-mobile-number">
                             <i className="fa fa-phone"></i>03145367544
                           </li>
@@ -239,9 +252,9 @@ export default function Header (){
                             <i className="fa fa-envelope"></i>zafaraniyeh@info.com
                           </li>
                           <li className="footer-mobile-number">
-                            <i className="fa fa-map-marker"></i> 
-                            اصفهان شاهین شهر خیابان مخابرات فرعی 4 غربی  پلاک 3
+                            <i className="fa fa-instagram"></i>zafaraniyehtvto.ir
                           </li>
+                      
                         </ul>
                         <div className="side-button">
                       <Link href={routes.SERVICES} className="bizwheel-btn theme-2 effect">

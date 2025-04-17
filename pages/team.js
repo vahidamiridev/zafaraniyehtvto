@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { routes } from "@/public/js/constants";
 import Image from "next/image";
 
 export default function Team() {
@@ -13,8 +14,8 @@ export default function Team() {
 							{/* <!-- Bread Menu --> */}
 							<div className="bread-menu">
 								<ul>
-									<li><a href="index-2.html">خانه</a></li>
-									<li><a href="team.html">تیم ما</a></li>
+									<li><a href={routes.HOME}>خانه</a></li>
+									<li><Link href={routes.ABOUT}>تیم ما</Link></li>
 								</ul>
 							</div>
 							{/* <!-- Bread Title --> */}

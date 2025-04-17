@@ -182,7 +182,7 @@ export default function Portfolio() {
                     </div>
                     <div className="portfolio-content">
                       <h4>
-                        <a href="portfolio-single.html"> هنر های تجسمی</a>
+                        <Link href={routes.ART}> هنر های تجسمی</Link>
                       </h4>
                       <p>  حضوری - آنلاین </p>
                     </div>

@@ -35,6 +35,7 @@ if(!course){
 
 export default function SinglePageDetails( {course}) {
 
+
   return (
     <div className="container my-5">
       <div className="row justify-content-center mb-4">
