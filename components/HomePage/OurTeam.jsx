@@ -27,7 +27,7 @@ export default function OurTeam() {
             </div>
           </div>
         </div>
-        <div className="team-slider">
+        <div className="team-slider owl-carousel">
           <div className="single-slider">
             {/* <!-- Single Team --> */}
             <div className="single-team">
