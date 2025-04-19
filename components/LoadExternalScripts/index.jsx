@@ -1,4 +1,5 @@
-import Script from "next/script";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function LoadExternalScripts() {
   return (
