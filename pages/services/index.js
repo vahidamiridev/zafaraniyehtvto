@@ -1,7 +1,7 @@
 import { routes } from "@/public/js/constants";
 import Link from "next/link";
 import courses from "@/data/courses.json";
-import CardMember from "@/components/CardMember";
+import CardCourse from "@/components/CardCourse"
 export default function Services() {
   return (
     <>
@@ -68,7 +68,7 @@ export default function Services() {
           </div>
           <div className="row">
             {courses.map((course) => {
-              return <CardMember 
+              return <CardCourse
 			  key={course.id}
 			   course={course} 
 			  />

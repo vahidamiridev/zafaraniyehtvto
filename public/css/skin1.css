@@ -4814,9 +4814,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   }
   .team-member {
     overflow: hidden;
-    border-radius: 12px;
     transition: transform 0.3s ease;
-  }
+    box-shadow:  0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+
 
   .team-member:hover {
     transform: scale(1.05);

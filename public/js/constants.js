@@ -15,9 +15,11 @@ export const routes = {
     TEAM : "/team",
 }
 
-const textServices = {
-            language_en :{
-                    title:"",
-                    discription:"",
-            },
-}
+export const members = [
+    {id:1 , name:"فاطمه امیری" , job:"سرگروه زبان انگلیسی", src:"/img/team/fatemehAmiri.png"},
+    {id:2 , name:"وحید امیری" , job:"سرگروه کامپیوتر", src:"/img/team/vahidAmiri.png"},
+    {id:3 , name:"سعیده خاکسار" , job:"سرگروه هنرهای تجسمی", src:"/img/team/saeidekhaksar.png"},
+    {id:4 , name:"سحر حافظی" , job:"مربی -زبان انگلیسی", src:"/img/team/saharHafezi.png"},
+    {id:5 , name:"فاطمه هاشمی" , job:"مربی - هنرهای تجسمی", src:"/img/team/fatemehHashemi.png"},
+    {id:6 , name:"لیلا کثیری" , job:"امور اداری- حسابداری", src:"/img/team/leylaKasiri.png"},
+]

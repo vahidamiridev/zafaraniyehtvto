@@ -1,4 +1,5 @@
-import { routes } from "@/public/js/constants";
+import CardMember from "@/components/CardMember";
+import { members, routes } from "@/public/js/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -104,101 +105,15 @@ export default function About() {
         </div>
       </section>
       {/* <!--/ End About Us --> */}
-      <div class="container py-5">
-        <h2 class="text-center mb-5">نفرات تیم ما :</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="team-member bg-white shadow-sm">
-              <Image
-                src="/img/team/team-1.jpg"
-                alt="عضو اول"
-                class="member-img"
-                width={360}
-                height={310}
-              />
-              <div class="member-info">
-                <h5 class="mb-1">فاطمه امیری</h5>
-                <p class="text-muted mb-0">سرگروه زبان انگلیسی</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="team-member bg-white shadow-sm">
-              <Image
-                src="/img/team/team-3.jpg"
-                alt="عضو سوم"
-                class="member-img"
-                width={360}
-                height={310}
-              />
-              <div class="member-info">
-                <h5 class="mb-1">وحید امیری </h5>
-                <p class="text-muted mb-0">سرگروه کامپیوتر</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="team-member bg-white shadow-sm">
-              <Image
-                src="/img/team/team-5.jpg"
-                alt="عضو سوم"
-                class="member-img"
-                width={360}
-                height={310}
-              />
-              <div class="member-info">
-                <h5 class="mb-1"> سعیده خاکسار</h5>
-                <p class="text-muted mb-0">سرگروه هنرهای تجسمی</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="team-member bg-white shadow-sm">
-              <Image
-                src="/img/team/team-2.jpg"
-                alt="عضو دوم"
-                class="member-img"
-                width={360}
-                height={310}
-              />
-              <div class="member-info">
-                <h5 class="mb-1"> فاطمه هاشمی</h5>
-                <p class="text-muted mb-0">مربی  - هنرهای تجسمی</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="team-member bg-white shadow-sm">
-              <Image
-                src="/img/team/team-4.jpg"
-                alt="عضو سوم"
-                class="member-img"
-                width={360}
-                height={310}
-              />
-              <div class="member-info">
-                <h5 class="mb-1">   سحر حافظی</h5>
-                <p class="text-muted mb-0"> مربی -زبان انگلیسی</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="team-member bg-white shadow-sm">
-              <Image
-                src="/img/team/team-6.jpg"
-                alt="عضو سوم"
-                class="member-img"
-                width={360}
-                height={310}
-              />
-              <div class="member-info">
-                <h5 class="mb-1"> لیلا کثیری</h5>
-                <p class="text-muted mb-0">امور اداری- حسابداری</p>
-              </div>
-            </div>
-          </div>
+      <div className="container py-5">
+        <h2 className="text-center mb-5">نفرات تیم ما :</h2>
+        <div className="row">
+                      {
+                        members.map((member)=><CardMember 
+                        key={member.id}
+                        member={member}
+                        />)
+                      }
         </div>
       </div>
     </>

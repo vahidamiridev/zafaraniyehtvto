@@ -40,11 +40,11 @@ export default function Contact() {
       <section className="contact-us section-space">
         <div className="container">
           <div className="row">
-            <div className="col-lg-7 col-md-7 col-12">
+            <div className="col-lg-7 col-md-7 col-12  box-map">
               <div className="contact-map">
 				نقشه :
                 <div id="myMap" className="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.8156791399265!2d51.55287543050374!3d32.86476773776982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbdc506620094c3%3A0x4f2ef36fbd58aaa5!2sIsfahan%20Province%2C%20Shahin%20Shahr%2C%20Beheshti%2C%20VH83%2B24P%2C%20Iran!5e0!3m2!1sen!2sus!4v1744880461917!5m2!1sen!2sus" width="600" height="450" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.8156791399265!2d51.55287543050374!3d32.86476773776982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbdc506620094c3%3A0x4f2ef36fbd58aaa5!2sIsfahan%20Province%2C%20Shahin%20Shahr%2C%20Beheshti%2C%20VH83%2B24P%2C%20Iran!5e0!3m2!1sen!2sus!4v1744880461917!5m2!1sen!2sus" width="600" height="450" style={{border:"0"}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 				</div>
               </div>
               {/* <!-- Contact Form --> */}

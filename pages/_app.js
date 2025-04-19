@@ -2,9 +2,9 @@ import Layout from "@/components/Layout";
 import LoadExternalScripts from "@/components/LoadExternalScripts";
 import Head from "next/head";
 
+
+
 function MyApp({ Component, pageProps }) {
-
-
   return (
     <>
       <Head>
